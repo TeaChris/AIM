@@ -1,0 +1,455 @@
+/* ========= GOOGLE FONTS ========= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --color-main1: #0492c2;
+    --color-main2: #52b2bf;
+    --color-main3: #63c5da;
+    --color-for: #1d1d1d;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gradient: linear-gradient(var(--color-main1), var(--color-main3)); 
+    --color-gradient2: linear-gradient(to right, var(--color-main1), var(--color-main3)); 
+    --color-gradient3: linear-gradient(to left, var(--color-main1), var(--color-main3)); 
+
+
+    --transition: all 2s ease-out 0s;
+}
+
+/* body{
+    background: var(--color-gradient);
+} */
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3{
+    font-size: 2rem;
+    /* line-height: 1rem; */
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+h4,
+h5,
+h6{
+    font-size: 1.2rem;
+    /* line-height: 0.5rem; */
+    font-weight: 600;
+    /* text-align: center; */
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.main_btn{
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 1.8rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    position: relative;
+    color: var(--color-main1);
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 5;
+}
+
+
+/* ============== CUSTOM SCROLLBAR =============== */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--color-white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--color-gradient3);
+    border-radius: 5rem;
+}
+
+
+
+
+/* =========== NAV ============ */
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: var(--transition);
+    z-index: 1000000;
+}
+
+.nav .nav__toggle .toggler-icon{
+   width: 27px;
+   height: 3px;
+   background-color: var(--color-main1);
+   margin: 5px 0;
+   position: relative;
+   display: block;
+   transition: var(--transition);
+}
+
+.nav .nav__toggle{
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.nav .menu__bar .menu_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .menu__bar .menu_items li{
+    margin: 0 15px;
+}
+
+.nav .menu__bar .menu_items li a{
+    color: var(--color-black);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.nav .menu__bar .menu_items li a:hover{
+    color: var(--color-main3);
+}
+
+.nav .nav_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .nav_socials span{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 10px;
+    color: var(--color-main1);
+}
+
+.nav .nav_socials UL{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.nav .nav_socials UL li{
+    margin: 0 0.5rem;
+}
+
+.nav .nav_socials UL li a{
+    color: var(--color-main3);
+    font-size: 1rem;
+}
+
+
+
+/*-- ================ HOME =================*/
+
+.back{
+    background-image: url(../images/home.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.back .overlay{
+    background-image: linear-gradient(rgba(232, 237, 255, 0.9), rgba(239,254,255,0.9) 40%, rgba(254,255,244,0.3)70%, rgba(255, 255, 255, 0.12));
+    width: 100%;
+    height: 100%;
+}
+
+.back .hero_effect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.back .hero_effect img{
+    width: 100%;
+    display: block;
+}
+
+/*================ HOME IMAGE TEXT =================*/
+
+.hero_text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_text h6{
+    color: var(--color-for);
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero_text .home_btn{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.hero_text .home_btn li{
+     display: inline-block;
+     margin: 10px 10px 0 0; 
+}
+
+.hero_text .home_btn li a.main_btn{
+    border-radius: 3rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+    border: 0;
+    line-height: 3.5rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.hero_text .home_btn li a.main_btn i{
+    margin-left: 0.5rem;
+    color: var(--color-main1);
+}
+
+.hero_text .home_btn .btn_one{
+    color: var(--color-white);
+}
+
+.hero_text .home_btn .btn_one::before{
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--color-gradient2);
+    z-index: -1;
+    transition: var(--transition);
+    background-position: right center;
+}
+
+.hero_text .home_btn .btn_one:hover::before{
+    background-image: var(--color-gradient3);
+    background-position: left center;
+}
+
+.hero_text .home_btn .btn_two:hover{
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);   
+}
+
+/*================ SERVICES =================*/
+
+#wrapper{
+    margin: 5rem 7rem 5rem 7rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service h6{
+    margin-bottom: 6rem;
+}
+
+.service .service_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service_content .box{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service_content .box .box_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service .service_content .box .box_1 .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.service .service_content .box .box_1 .services i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-main1);
+}
+
+.service .service_content .box .box_1 .services .service_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.service .service_content .service_img{
+    width: 40%;
+}
+
+.service .service_content .service_img img{
+    width: 120%;
+}
+
+/* ============================== PRICING ====================================== */
+
+.pricing{
+    display: block;
+    text-align: center;
+}
+
+.pricing h6{
+    margin-bottom: 6rem;
+}
+
+.pricing .table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing .basic{
+    width: 355px;
+    height: 80%;
+    border: 1px solid var(--color-main1);
+    border-radius: 1.5rem;
+}
+
+.pricing .basic h3{
+    text-align: center;
+    font-weight: 300;
+    padding: 40px 0;
+    background-color: var(--color-main3);
+    transition: var(--transition);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.pricing .basic:hover h3{
+    background-image: var(--color-gradient2);
+    color: var(--color-white);
+}
+
+.pricing .standard h3{
+    background-image: var(--color-gradient2);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    color: var(--color-white);
+}
+
+.pricing .basic .price{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pricing .basic .price .sign{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.pricing .basic .price .currency{
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.pricing .basic .price .cent{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+.pricing .basic .price .month{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+.pricing .basic ul li{
+    border-top: 1px solid var(--color-main2);
+    padding: 18px 0;
+    border-bottom: 1px solid var(--color-main2);
+    color: var(--color-for)
+}
+
+.pricing .basic ul li i{
+    padding-right: 5px;
+    color: var(--color-main1);
+}
+
+.pricing .header_btn{
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.pricing .header_btn a{
+    font-weight: normal;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    outline: medium none;
+    border: 1px solid var(--color-main3);
+    color: var(--color-main1);
+}
+
+.pricing .basic:hover .header_btn a{
+    background-image: var(--color-gradient2);
+    color: var(--color-white);
+    border: 1px solid var(--color-main3);
+}
+
+.pricing .standard .header_btn a{
+    background-image: var(--color-gradient2);
+    color: var(--color-white);
+    border: 1px solid var(--color-main3);
+}
