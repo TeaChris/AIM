@@ -28,7 +28,7 @@
 }
 
 /* body{
-    background: var(--color-gradient);
+    background: var(--color-black);
 } */
 
 a{
@@ -43,6 +43,7 @@ h3{
     font-weight: 900;
     text-align: center;
     margin-bottom: 0.7rem;
+    color: var(--color-main1);
 }
 
 h4,
@@ -54,6 +55,11 @@ h6{
     /* text-align: center; */
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
+    color: var(--color-main1);
+}
+
+ul li{
+    color: var(--color-main1);
 }
 
 .main_btn{
@@ -131,7 +137,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .nav .menu__bar .menu_items li a{
-    color: var(--color-black);
+    color: var(--color-main1);
     font-size: 1rem;
     font-weight: 800;
 }
@@ -210,8 +216,12 @@ html::-webkit-scrollbar-thumb{
     transform: translate(-50%, -50%);
 }
 
+.hero_text h3{
+    color: var(--color-main1);
+}
+
 .hero_text h6{
-    color: var(--color-for);
+    color: var(--color-main1);
     font-weight: 400;
     text-align: center;
 }
@@ -281,6 +291,10 @@ html::-webkit-scrollbar-thumb{
     margin-bottom: 10rem;
 }
 
+.service h3{
+    color: var(--color-main1);
+}
+
 .service h6{
     margin-bottom: 6rem;
 }
@@ -290,6 +304,7 @@ html::-webkit-scrollbar-thumb{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: var(--color-main1);
 }
 
 .service .service_content .box{
@@ -345,6 +360,10 @@ html::-webkit-scrollbar-thumb{
     margin-bottom: 10rem;
 }
 
+.pricing h3{
+    color: var(--color-main1);
+}
+
 .pricing h6{
     margin-bottom: 6rem;
 }
@@ -389,6 +408,7 @@ html::-webkit-scrollbar-thumb{
     display: block;
     text-align: center;
     padding: 20px 0;
+    color: var(--color-main1);
 }
 
 .pricing .basic .price .sign{
@@ -425,7 +445,7 @@ html::-webkit-scrollbar-thumb{
     border-top: 1px solid var(--color-main2);
     padding: 18px 0;
     border-bottom: 1px solid var(--color-main2);
-    color: var(--color-for)
+    color: var(--color-main1)
 }
 
 .pricing .basic ul li i{
@@ -542,6 +562,12 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.contact h3,
+h6{
+
+    color: var(--color-main1);
 }
 
 .contact .form{
