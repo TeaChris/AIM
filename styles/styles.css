@@ -164,7 +164,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .nav .menu__bar .menu_items li a:hover{
-    color: var(--color-main3);
+    color: var(--color-light2);
 }
 
 .nav .nav_socials {
@@ -942,7 +942,7 @@ footer .second_row .text{
     }
 
     .nav .menu__bar .menu_items li a{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .hero_text{
@@ -1003,11 +1003,11 @@ footer .second_row .text{
     }
 
     .cta .para .call_new input{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cta .para .call_new button{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /* ============ CONTACT ============ */
