@@ -80,6 +80,21 @@ ul li{
 }
 
 
+
+/* ============= SCROLL BEHAVIOR =============== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.offset::before{
+    /* content: ' '; */
+    display: block;
+    height: 10rem;
+    margin-top: -2rem;
+}
+
+
 /* ============== CUSTOM SCROLLBAR =============== */
 html::-webkit-scrollbar{
     width: 0.5rem;
@@ -658,6 +673,7 @@ footer .row_one{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 footer .row_one ul{
@@ -758,4 +774,358 @@ footer .second_row .text{
 .copyright p{
     text-align: center;
     color: var(--color-white);
+}
+
+
+/* ================================ MEDIA QUERIES ========================== */
+
+
+/* ================= BIG DEVICES ================== */
+
+@media only screen and (max-width: 946px) {
+    
+    /* ======== NAVBAR ======= */
+
+    .nav{
+        padding: 1rem 3rem;
+    }
+
+    .nav .nav_socials{
+        display: none;
+    }
+
+    .hero_text{
+        width: 60%;
+    }
+    
+    .hero_text h3{
+        font-size: 30px;
+    }
+    
+    .hero_text h6{
+        font-size: 1rem;
+    }
+
+    /* ============== SERVICES =============== */
+
+    #wrapper{
+        margin: 3rem 3rem 10rem 2rem;
+    }
+    
+    .service{
+        margin-bottom: 3rem;
+    }
+    
+    .service h3{
+        color: var(--color-main1);
+    }
+    
+    .service h6{
+        margin-bottom: 3rem;
+    }
+    
+    .service .service_content{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .service .service_content .box{
+        width: 100%;
+    }
+    
+    .service .service_content .box .box_1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        
+    .service .service_content .service_img{
+        width: 100%;
+    }
+    
+    .service .service_content .service_img img{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /* ============== PRICING =============== */
+
+    .pricing .table{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .pricing .basic{
+        margin-bottom: 3rem;
+    }
+
+    /* ============== CTA ================ */
+
+    .cta{
+        margin-bottom: 5rem;
+     }
+     
+     .cta .para{
+        width: 80%;
+     }
+
+     /* ============ CONTACT ============ */
+
+     .contact .form{
+        width: 80%;
+     }
+
+     /* ============= FOOTER =============== */
+
+    footer .row_one{
+        margin-bottom: 2rem;
+    }
+    
+    footer .row_one ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       align-items: center; 
+    }
+    
+    footer .row_one a{
+        padding-right: 20px;
+        font-size: 26px;
+        color: var(--color-main1);
+    }
+    
+    footer .second_row{
+        display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    
+}
+
+
+/* ================= MEDIUM DEVICES ================== */
+
+@media only screen and (max-width: 774px) {
+    .nav{
+        padding: 0.7rem 1rem;
+    }
+      
+    .nav .nav__toggle{
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000000;
+    }
+
+    .nav .menu__bar{
+        position: fixed;
+        top: 55px;
+        right: -360px;
+        width: 300px;
+        background-color: var(--color-main3);
+        height: 50vh;
+        transition: var(--transition);
+    }
+    
+    .nav .menu__bar .menu_items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+    
+    .nav .menu__bar .menu_items li{
+        margin: 2rem 30px;
+    }
+
+    .nav .menu__bar .menu_items li a{
+        font-size: 1.5rem;
+    }
+
+    .hero_text{
+        width: 80%;
+    }
+
+    .hero_text h6{
+        font-size: 16px;
+    }
+    
+    /* ============== SERVICES ============== */
+
+    #wrapper{
+        margin: 3rem 1rem 10rem 1rem;
+    }
+
+    .service h3{
+        font-size: 33px;
+    }
+
+    .service h6{
+        font-size: 16px;
+    }
+
+    .service .service_content .service_img{
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    /* ========= PRICING ========= */
+
+    .pricing h3{
+        font-size: 33px;
+    }
+    
+    .pricing h6{
+        font-size: 16px;
+    }
+
+    .pricing .table{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    /* ============ CTA============ */
+
+    .cta .para{
+        width: 90%;
+    }
+
+    .cta .para h3{
+        font-size: 33px;
+    }
+
+    .cta .para h6{
+        font-size: 16px;
+    }
+
+    .cta .para .call_new input{
+        font-size: 16px;
+    }
+
+    .cta .para .call_new button{
+        font-size: 15px;
+    }
+
+    /* ============ CONTACT ============ */
+
+    .contact h3{
+        font-size: 33px;
+    }
+
+    .contact h6{
+        font-size: 16px;
+    }
+
+    .contact .form .header_btn a{
+        font-size: 33px;
+    }
+
+    /* ============ FOOTER ============ */
+
+    footer{
+        padding: 4rem 1rem;
+    }
+
+    footer .second_row{
+        flex-wrap: wrap;
+    }
+
+    footer .second_row .first_row{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+
+/* ================= SMALL DEVICES ================== */
+
+@media only screen and (max-width: 541px) {
+    
+    /* ========== HOME TEXT =========== */
+
+    .hero_text h3{
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .hero_text .home_btn li a.main_btn{
+        margin-top: 0.7rem;
+        font-size: 15px;
+    }
+
+    /* =========== SERVICES ============== */
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .service h6{
+        text-align: justify;
+    }
+    
+    .service .service_content .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .service .service_content .box .box_1 .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    /* ============ CTA ============== */
+
+    .cta .para h3{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    
+    .cta .para .call_new input{
+        font-size: 12px;
+    }
+
+    .cta .para .call_new button{
+        font-size: 12px;
+    }
+
+    /*  ========== CONTACT ==========  */
+
+    .contact .form{
+        width: 100%;
+    }
+
+    .contact .form .first, .contact .form .first{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start; 
+    }
+
+    .contact .form .first{
+        margin: 0 0;
+    }
+
+    .contact .form .first input, .contact .form .first input{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact .form .header_btn a{
+        font-size: 2rem;
+        border-radius: 3rem;
+    }
 }
