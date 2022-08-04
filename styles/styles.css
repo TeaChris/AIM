@@ -1095,7 +1095,12 @@ footer .second_row .text{
     }
     
     .cta .para .call_new input{
-        font-size: 12px;
+        /* font-size: 12px; */
+        display: none;
+    }
+
+    .cta .para .call_new i{
+        margin-right: 7rem;
     }
 
     .cta .para .call_new button{
