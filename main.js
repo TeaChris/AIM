@@ -23,3 +23,13 @@ menu.onclick = function() {
         items.style.right = "-360px";
     }
 }
+
+
+
+// PRELOADER
+
+var loader = document.getElementById("prelaoder");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
